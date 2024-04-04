@@ -13,32 +13,22 @@ int ft_strlen(char *str)
 
  char *ft_rev_print (char *str)
 {
-  int i = 0;
-
- /* while(str[i] != '\0')
-  {
-    write(1, &str[i], 1);
-    i++;
-  }
- */
-
-  int j = ft_strlen(str);
-
-  printf("%d", j);
+  int j = ft_strlen(str) - 1;
 
   while (j >= 0)
   {
     write(1, &str[j], 1);
     j--;
   }
+  return str;
 }
 
 int main(int argc, char **argv)
 {
-  if(argc == 2)
+  if(argc == 2 && argv[1][0] != '\0')
   {
     if(argv[1][0] != '\0')
       ft_rev_print(argv[1]);
-    write(1, "\n", 1);
   }
+  write(1, "\n", 1);
 }
