@@ -21,8 +21,8 @@ int		check_doubles(char *str, char c, int pos)
 
 void  inter(char *str1, char *str2)
 {
-   int i = 0;
-   while(str1[i] != '\0')
+    int i = 0;
+    while(str1[i] != '\0')
     {
       int j = 0;
       while(str2[j] != '\0')

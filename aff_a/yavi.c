@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
     int index;
     index = 0;
 
-  if (argc != 2)
+    if (argc != 2)
     {
         write(1,"a",1);
     }
