@@ -1,0 +1,4 @@
+8.	project name: count_alen.c
+
+create a function that returns the length of a string till an 'a', if 'a' dosent exist it in the string it will simply return the whole strings length
+----------------------------------------

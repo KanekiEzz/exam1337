@@ -27,7 +27,7 @@ int	ft_atoi(const char *str)
 
 	return (sign * resault);
 }
-/*
+
 int   main(void)
 {
 	char *a = "  -1234506789ab567";
@@ -71,7 +71,7 @@ int   main(void)
   printf("%d\n", ft_atoi(g));
 	printf("%d\n", atoi(g));
 }
-*/
+/*
 int main() {
     // Example usage
     const char *str1 = "12345";
@@ -93,4 +93,4 @@ int main() {
     printf("Result 8: %d\n", ft_atoi(str8));
 
     return 0;
-}
+}*/

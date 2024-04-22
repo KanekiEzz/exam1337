@@ -1,0 +1,8 @@
+4.	project name:ft_interval.c
+
+create a program that turns in an argument the character to '5' each time the index is a multiple of 3.and to '3' each time the index is a multiple of 5, and to '5' if its a multiple of both.
+
+./a.out it's me mario hehe | cat -e
+it5s35e 53r5o 5eh5$
+-----------------------------------------
+
