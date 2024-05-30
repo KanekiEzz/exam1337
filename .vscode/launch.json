@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "//wsl.localhost/Ubuntu-22.04/home/kaneki/exam/ft_swap",
-      "program": "//wsl.localhost/Ubuntu-22.04/home/kaneki/exam/ft_swap/build/Debug/outDebug",
+      "cwd": "c:/Users/kaneki/Desktop/exam1337",
+      "program": "c:/Users/kaneki/Desktop/exam1337/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
