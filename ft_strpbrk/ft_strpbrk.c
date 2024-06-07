@@ -4,9 +4,12 @@
 char	*ft_strpbrk(const char *s1, const char *s2)
 {
     int i, j;
-    char charr;
-    if (*s1 == '\0' || *s2 == '\0')
-        return 0;
+
+    if (*s1 == '\0')
+        return NULL;
+    if (*s2 == '\0')
+        return (char*)s1;
+
     i = 0;
     while (s1[i] != '\0')
     {
@@ -14,34 +17,25 @@ char	*ft_strpbrk(const char *s1, const char *s2)
         while (s2[j] != '\0')
         {
             if (s1[i] == s2[j])
-            {
-                s[i] = charr;
-                return (charr);
-            }
+                return (char *) &s1[i];
             j++;
         }
         i++;
     }
-    return()
+    return(NULL);
 }
 
 
-int main() {
-    const char *inputString = "hello world";
+int main()
+{
+    const char s1[] = "hello world";
     
-    const char *searchChars = "aeiloud";
+    const char s2[] = "dae";
     
-    const char *result = ft_strpbrk(inputString, searchChars);
-    const char *result = strpbrk(inputString, searchChars);
+    char *result = ft_strpbrk(s1, s2);
+    // char *result = strpbrk(s1, s2);
     
-    if (result)
-    {
-        printf("%s \n %c \n", inputString, *result);
-    }
-    else
-    {
-        printf("%s  \n", inputString);
-    }
+    printf("%c \n",*result);
     
     return 0;
 }
