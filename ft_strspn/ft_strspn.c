@@ -14,11 +14,13 @@ size_t	ft_strspn(const char *s, const char *accept)
     {
         j = 0;
         while(accept[j] != '\0')
-        {
+        {   
             if (accept[j] == s[i])
                 k++;
             j++;
         }
+        if (k == 0)
+            break;
         i++;
     }
     return (k);
@@ -26,11 +28,11 @@ size_t	ft_strspn(const char *s, const char *accept)
 
 int main()
 {
-    const char s[] = "abcde12345";
+    const char s[] = "labcde12345";
     const char accept[] = "abcde";
 
     size_t result = ft_strspn(s, accept);
     // size_t result = strspn(s, accept);
 
-    printf("%zu\n", result);
+    printf("%ld\n", result);
 }
